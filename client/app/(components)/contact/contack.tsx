@@ -24,7 +24,7 @@ const ContactForm = () => {
 
 
         const subject = encodeURIComponent('Contact Form Submission');
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`);
+        const body = encodeURIComponent(`Name: ${name}Email: ${email}Phone: ${phone}Message:${message}`);
         const mailtoLink = `mailto:jpattrick53@gmail.com?subject=${subject}&body=${body}`;
 
         window.location.href = mailtoLink;
