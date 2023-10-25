@@ -1,0 +1,29 @@
+.details {
+  height: calc(100vh - 4rem);
+  width: 100%;
+  background: #000 url("../../(assets)/public/images/backgroundmain-img.svg") center center/cover no-repeat;
+  font-size: 1.45rem;
+  font-style: normal;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 0.5em;
+}
+.details .main-text {
+  font-size: 2rem;
+}
+.details .separator {
+  width: 10rem;
+}
+.details .social {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 3.5rem;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=home.style.css.map */

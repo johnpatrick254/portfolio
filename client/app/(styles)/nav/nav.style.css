@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-flow: row nowrap;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  height: 4rem;
+}
+nav #nav-logo {
+  height: 100%;
+  width: 4rem;
+  position: relative;
+}
+nav .nav-cto {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .nav-cto .nav-links {
+  position: absolute;
+  width: 100vw;
+  top: 100%;
+  left: 0;
+  padding: 0.3em 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+nav .nav-cto .nav-links a {
+  padding: 0.5em;
+  width: 100%;
+  font-weight: 600;
+}
+nav .nav-cto .nav-links > a:last-child {
+  background-color: #ffffff;
+  color: #000000;
+}
+nav .nav-cto .hamburger {
+  height: 100%;
+  width: 2.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+nav .nav-cto .hamburger:hover {
+  cursor: pointer;
+}
+nav .nav-cto .hamburger div {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+}
+nav .nav-cto .active-hamburger > div:first-child {
+  transform: rotate(-40deg);
+  translate: -9px 12px;
+}
+nav .nav-cto .active-hamburger > div:nth-child(2) {
+  opacity: 0;
+}
+nav .nav-cto .active-hamburger > div:last-child {
+  transform: rotate(40deg);
+  translate: -9px -8px;
+}
+
+/*# sourceMappingURL=nav.style.css.map */

@@ -1,0 +1,63 @@
+#skills {
+    min-height: max-content;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4rem;
+    padding: 3em 2.5em;
+    color: #000;
+
+    .skills-title {
+        outline: 5px solid black;
+        padding: 1em;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 127.9%;
+        /* 17.906px */
+        letter-spacing: 6.095px;
+    }
+
+    .skill-body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 2rem;
+        min-height: max-content;
+        justify-content: center;
+
+        .skill-category {
+            h2 {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 5.561px;
+            }
+            
+        }
+        .category-skills{
+            display: flex ;
+            min-height: max-content;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap:2.5rem;
+            align-items: center;
+            flex-basis: content;
+            flex-shrink: 1;
+
+            .skill-card{
+                height: 5rem;
+                width: 5rem;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                img{
+                    height: 70% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
